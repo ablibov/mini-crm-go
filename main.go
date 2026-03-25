@@ -28,7 +28,7 @@ func selection() int {
 }
 
 func main() {
-	for { // 🔥 ВОТ ЭТО ГЛАВНОЕ
+	for {
 		a := selection()
 
 		if a == 1 {
@@ -45,7 +45,7 @@ func main() {
 			fmt.Println("✅ Создан:", user.name, user.age)
 
 		} else if a == 2 {
-			fmt.Println("🗑 Удаление пока фейк 😄")
+			fmt.Println("🗑 Удаление")
 
 		} else if a == 3 {
 			var name string
@@ -61,14 +61,14 @@ func main() {
 			fmt.Println("✅ Создана задача:", task.name, task.date)
 
 		} else if a == 4 {
-			fmt.Println("🗑 Удаление задачи пока фейк 😄")
+			fmt.Println("Удаление задачи")
 
 		} else if a == 0 {
 			fmt.Println("Пока 👋")
-			break // 🔥 выход из программы
+			break
 
 		} else {
-			fmt.Println("❌ Неверный ввод")
+			fmt.Println("Неверный ввод")
 		}
 	}
 }
